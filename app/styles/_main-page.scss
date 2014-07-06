@@ -1,0 +1,22 @@
+.main-page {
+  .proposal {
+    height: 18em;
+    overflow: hidden;
+    margin-bottom: 2em;
+
+    .info {
+      height: 14em;
+      overflow: hidden;
+      margin-bottom: 1em;
+
+
+      .point {
+        white-space: nowrap;
+      }
+    }
+
+    .other > div {
+      margin-right: 1em;
+    }
+  }
+}
