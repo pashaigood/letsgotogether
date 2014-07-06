@@ -1,0 +1,21 @@
+<div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">letsgotogether</h3>
+</div>
+<h2>Кто куда сейчас едет</h2>
+<div class="row">
+    <div class="col-sm-4" ng-repeat="proposal in activeProposal.models">
+        <h4>
+            <span ng-repeat="point in proposal.get('route')">
+                {{point.name}}<span ng-if> -
+            </span>
+        </h4>
+        <p>
+            {{proposal.get('description')}}
+        </p>
+    </div>
+</div>

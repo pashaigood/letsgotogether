@@ -1,0 +1,14 @@
+{
+    "name": "index build",
+    "root": "../scripts",
+    "output": "../../.tmp/index.lmd.js",
+    "modules": {
+    	"<%= subdir %>*": "**/*.js"
+    },
+    "main": "main",
+    "sourcemap": "../../.tmp/index.lmd.map",
+    "sourcemap_inline": true,
+    "sourcemap_www": "/scripts",
+    "sourcemap_url": "/index.lmd.map",
+    "depends": false
+}
